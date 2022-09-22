@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body class="max-w-[1660px] mx-auto">
+
+    <nav class="bg-slate-200 ">
+        <div class="flex justify-between p-5 md:max-w-3xl lg:max-w-4xl xl:max-w-7xl mx-auto">
+            <div><a href="/" class="text-xl font-bold">logo</a></div>
+            <div class="space-x-5 nav-links">
+                <a href="/dashboard">Dashboard</a>
+                <a href="/auth/logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="md:max-w-3xl lg:max-w-4xl xl:max-w-7xl mx-auto mt-10">
+
+        <h1 class="text-center text-2xl">Welcome to Dashboard page</h1>
+
+        <div class="mt-5 sm:w-[400px]">
+
+            <p class="text-red-500 editError"></p>
+
+            <!-- update user -->
+            <div class="editContainer hidden">
+                <form class="space-x-4 editForm">
+                    <input type="text" name="edit" class="my-5 bg-slate-200 rounded-lg p-2 editValue" />
+                    <!-- <button class="bg-blue-500 py-1 px-2 text-white rounded-lg editBtn"></button> -->
+                    <input type="submit" class="cursor-pointer bg-blue-500 py-1 px-2 text-white rounded-lg editBtn" />
+                    <button class="editHideBtn font-bold">X</button>
+                </form>
+            </div>
+
+
+
+            <div class="md:flex items-center space-y-2 md:space-y-0">
+                <p class="w-1/2">Your username:</p>
+                <div class="flex items-center">
+                    <p class="username"></p>
+                    <span class="edit editUsername text-xs text-blue-700 cursor-pointer">(edit)</span>
+                </div>
+            </div>
+            <div class="md:flex items-center space-y-2 md:space-y-0">
+                <p class="w-1/2">Your email:</p>
+                <div class="flex items-center">
+                    <p class="email"></p>
+                    <span class="edit editEmail text-xs text-blue-700 cursor-pointer">(edit)</span>
+                </div>
+            </div>
+            <div class="md:flex items-center space-y-2 md:space-y-0">
+                <p class="w-1/2">Created at:</p>
+                <p class="createdAt"></p>
+            </div>
+
+            <div class="md:flex items-center space-y-2 md:space-y-0">
+                <p class="w-1/2">Email verification:</p>
+                <p class="isVerified"></p>
+                <button class="ml-3 text-xs text-blue-700 cursor-pointer verify">(verify)</button>
+                <p class="ml-3 text-xs verifySuccess text-green-600"></p>
+                <p class="ml-3 text-xs verifyError text-red-500"></p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script src="/dashboard.js"></script>
+</body>
+
+</html>
