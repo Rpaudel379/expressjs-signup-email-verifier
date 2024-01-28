@@ -2,7 +2,7 @@
 User verification app made from expresjs. When the user is registered then the verification email is sent to the registered email.  
 
 
-## You can test this app with just a few steps, download the git files and follow the following steps
+## You can test this app with just a few steps, clone the repository and follow the following steps
                 
 1.  install the dependencies  
 `$ npm install`
